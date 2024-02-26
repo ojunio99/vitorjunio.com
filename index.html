@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitor Junio - Web Developer</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <h1>
+                <span data-typeit-id="7455174">Hi There! I'm Vitor Junio')
+                    <span class="ti-cursor with-delay" style="display: inline; color: rgb(0, 0, 0); line-height: 66px; margin: 0px -7.03906px 0px -3.03906px;">_</span>
+                </span>
+            </h1>
+        </div>
+        <h2 class="center-text">Desenvolvedor web full stack focado em criar ótimas experiências na web.</h2>
+
+    </header>
+    
+       
+    </header>
+    
+    <div class="container"> 
+        <div class="content">
+            <p>My <a href="./skills.html">SKILLS</a> allow me to create beautifully designed, intuitive, and functional websites.</p>
+            <p>My ability to adapt to the latest and most in-demand technologies is reflected on my <a href="https://github.com/ojunio99?tab=repositories" target="_blank">PROJECTS</a>.</p>
+            <p>When all of this gets combined, it translates into a killer <a href="#" id="resume-link">RESUME</a>.</p>
+            <div id="resume-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="resume-image" src="./img/cv2024.PNG">
+            </div>
+            <p>Btw, did I mention that I love photography?</p>
+            <a href="#social-section" class="btn">
+                GET IN TOUCH <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+
+    <footer id="social-section" class="social-container hidden">
+        
+        <div class="button-container">
+            <div class="glass-btn blue-btn">
+                <a href="https://www.facebook.com/vitor.junio.77" target="_blank">
+                    <img src="./img/icons8-facebook-48.png" alt="facebook" style="width: 2em;">
+                </a>
+            </div>
+        
+            <div class="glass-btn red-btn">
+                <a href="https://www.linkedin.com/in/ojunio99/" target="_blank">
+                    <img src="./img/icons8-linkedin-48.png" alt="linkedin" style="width: 2em;">
+                </a>
+            </div>
+        
+            <div class="glass-btn red-btn">
+                <a href="https://www.instagram.com/ojunio99" target="_blank">
+                    <img src="./img/icons8-instagram-48.png" alt="instagram" style="width: 2em;">
+                </a>
+            </div>
+                    
+            <div class="glass-btn blue-btn">
+                <a href="https://github.com/ojunio99" target="_blank">
+                    <img src="./img/icons8-github-48.png" alt="github" style="width: 2em;">
+                </a>
+            </div>
+        </div>
+        <p> </p>
+        
+    </footer>
+    <img src="./img/eu.jpg" alt="Vitor Junio" class="corner-image">
+    <p class="image-caption">Vitor Junio Pereira Pinto</p>
+    <script src="./js/lightbox.js"></script>
+    <script>
+        // Open the modal when clicking on the resume link
+        document.getElementById('resume-link').onclick = function() {
+            document.getElementById('resume-modal').style.display = "block";
+        }
+
+        // Close the modal when clicking on the close button or outside of the modal
+        var modal = document.getElementById('resume-modal');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

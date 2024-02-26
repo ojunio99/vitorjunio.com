@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-container {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid;
+    border-bottom-width: 1px; /* Ajuste a largura da borda conforme necessário */
+    border-bottom-style: inset;
+    border-color: transparent;
+    position: relative;
+   
+  }
+  .header-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Posiciona o início da borda no centro do elemento pai */
+    transform: translateX(-50%); /* Centraliza a borda */
+    width: 20%; /* Largura da borda */
+    height: 1px; /* Altura da borda */
+    background-color: black; /* Cor da borda */  
+}
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: block;
+    height: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  .slider li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .slider input {
+    display: none;
+  }
+  
+  .slider label {
+    background-color: transparent;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+  }
+  
+  .slider label:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .slider li:first-child {
+    opacity: 1;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .buttonback button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid ;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .buttonback button:hover {
+    color: rgba(255, 159, 16, 0.53);
+  }
+  
+  .percentage {
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 8px;
+    display: inline;
+    font-size: 18px;
+  }
+
+  .caption {
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-left: 3px;
+    margin-top: -14px;
+  }
+  
